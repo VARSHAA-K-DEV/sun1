@@ -1,0 +1,78 @@
+print("------CLASS and OBJECT----------")
+name=input("Enter the name:")
+marks=int(input("Enter the marks:"))
+
+class student:
+    def get(self,name,marks):
+        self.name=name
+        self.marks=marks
+    def display(self,name,marks):
+        return self.name,self.marks
+        
+obj=student()
+obj.get(name,marks)
+result=obj.display(name,marks)
+print("Student name and mark:",(result))
+
+------CLASS and OBJECT----------
+Enter the name:df
+Enter the marks:8
+Student name and mark: ('df', 8)
+---------------------
+
+print("----------CONDITIONAL STATEMENTS---------")
+# IF A NUMBER IS DIVISIBLE BY 3 AND 6
+number=int(input("Enter the number:"))
+if number%3==0:
+    print("It's divisible by 3")
+    if number%6==0:
+        print("Its divisible by 6")
+    else:
+        print("it's divisibe by both value")
+else:
+    print("not divisible by both")
+    
+----------CONDITIONAL STATEMENTS---------
+Enter the number:98
+not divisible by both
+
+-----------------------------
+
+print("------SINGLE INHERITANCE----------")
+name=input("Enter the name:")
+rollno=input("Enter the rollno:")
+marks=int(input("Enter the marks:"))
+
+class student:
+    def get(self,name,rollno):
+        self.name=name
+        self.rollno=rollno
+    def display(self,name,rollno):
+        return self.name,self.rollno
+class details(student):
+    def get1(self,name,rollno,marks):
+        self.marks=marks
+        if marks>35:
+            print("PASS")
+        else:
+            print("Fail")
+obj=details()
+obj.get1(name,rollno,marks)
+
+------SINGLE INHERITANCE----------
+Enter the name:sha
+Enter the rollno:7
+Enter the marks:34
+Fail
+---------------------
+
+
+
+
+
+
+
+
+
+
+
